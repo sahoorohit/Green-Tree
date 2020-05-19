@@ -103,6 +103,47 @@ body {
 }
 
 
+#issue {
+  background: url('../images/home/annie-spratt-135307-unsplash.png') no-repeat;
+  background-size: cover;
+  background-color: #354463;
+}
+
+.showcase-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+
+.showcase-1 .white-box {
+  background: #fff;
+  padding: 4rem 5em;
+  width: 35%;
+}
+
+.showcase-1 span {
+  background: #354463;
+  padding: .5rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font: 14px/17px Helvetica;
+  letter-spacing: 0.56px;
+  position: relative;
+  top: -4.5rem;
+}
+
+.showcase-1 p {
+  font: Bold 44px/56px Helvetica;
+  letter-spacing: 0px;
+}
+
+.showcase-1 .stop-climate {
+  color: #fff;
+  font: 68px/76px flood-std;
+  width: 35%;
+  text-align: left;
+}
+
 /* 
   ===========================
   Footer
@@ -111,6 +152,7 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
+  padding: 3rem 0;
 }
 
 footer span {
@@ -127,8 +169,6 @@ footer li {
 }
 
 .stop-climate {
-  width: 10rem;
-  height: auto;
   text-align: right;
   font: 44px/46px flood-std;
 }
@@ -140,7 +180,7 @@ footer li {
   Tablet View
   =========================== 
 */
-@media (max-width: 768px) and (min-width: 377px) {
+@media (max-width: 840px) and (min-width: 461px) {
   .header-home {
     display: block;
     justify-content: space-between;
@@ -149,11 +189,12 @@ footer li {
   .header-home nav {
     justify-content: space-between;
     margin-top: 1rem;
+    width: 100%;
   }
 
   .donate-btn {
     float: right;
-    margin-top: -5rem;
+    margin-top: -6rem;
   }
 
   footer {
@@ -161,8 +202,25 @@ footer li {
   }
 
   footer div {
-    width: 30%;
+    width: 40%;
     margin-bottom: 3rem;
+  }
+
+  .showcase-1 {
+    flex-direction: column-reverse;
+  }
+
+  .showcase-1 .white-box {
+    padding: 4rem 5em;
+    width: auto;
+  }
+
+  .showcase-1 .stop-climate {
+    margin-bottom: 5rem;
+  }
+
+  .showcase-1 p {
+    font: Bold 36px/46px Helvetica;
   }
 }
 
@@ -172,7 +230,7 @@ footer li {
   Mobile View
   =========================== 
 */
-@media (max-width: 376px) {
+@media (max-width: 460px) {
   .header-home {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -205,5 +263,28 @@ footer li {
   footer div {
     width: 50%;
     margin-bottom: 3rem;
+  }
+
+  .showcase-1 {
+    flex-direction: column-reverse;
+  }
+
+  .showcase-1 span {
+    top: -2.5rem;
+  }
+
+  .showcase-1 .white-box {
+    padding: 2rem 2rem;
+    width: auto;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .showcase-1 p {
+    font: Bold 22px/28px Helvetica;
+  }
+
+  .showcase-1 .stop-climate {
+    font: 44px/46px flood-Std;
   }
 }
