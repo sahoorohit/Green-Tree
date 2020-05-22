@@ -48,7 +48,15 @@ table {
 }
 
 
-
+/* 
+  ===========================
+  Customised
+  =========================== 
+*/
+@font-face {
+  font-family: flood-std;
+  src: url("../fonts/floodstd.otf");
+}
 
 body {
   font: 16px/24px Helvetica Arial sans-serif;
@@ -110,7 +118,8 @@ body {
 }
 
 .showcase-1,
-.showcase-2 {
+.showcase-2,
+.showcase-3 {
   display: flex;
   justify-content: space-between;
   padding: 5rem 0;
@@ -175,6 +184,60 @@ body {
 }
 
 .flex-item p {
+  font: 16px/24px Helvetica;
+  letter-spacing: -0.16px;
+}
+
+#what-we-do {
+  background: #354463;
+}
+
+#what-we-do .showcase-head {
+  position: relative;
+  text-align: left;
+  top: 3rem;
+}
+
+#what-we-do .rect-back {
+  background: #fff;
+  color: #354463;
+}
+
+#what-we-do .showcase-head p {
+  text-align: left;
+  font: Bold 44px/56px Helvetica;
+  color: #fff;
+  padding: 2rem 0 5rem 0;
+}
+
+.showcase-3 .white-box {
+  background: #fff;
+  width: 22%;
+  height: auto;
+  padding: 2rem 2rem;
+}
+
+.message-img {
+  position: relative;
+  top: -4rem;
+  margin-bottom: -4rem;
+  left: 2rem;
+}
+
+.message-img img {
+  height: 250px;
+  width: 100%;
+  transform: scaleX(1.22);
+}
+
+.message span {
+  margin-top: 2rem;
+  display: block;
+  font: Bold 28px/36px Helvetica;
+}
+
+.message p {
+  margin: 1rem 0 2rem 0;
   font: 16px/24px Helvetica;
   letter-spacing: -0.16px;
 }
@@ -267,6 +330,42 @@ footer li {
   .flex-item {
     width: 40%;
   }
+
+  .showcase-3 {
+    display: block;
+    margin: 3rem 0;
+  }
+
+  .showcase-3 .white-box {
+    width: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #what-we-do .showcase-head p {
+    font: Bold 36px/46px Helvetica;
+    padding: 2rem 0;
+  }
+
+  .showcase-3 .white-box:last-child{
+    margin-bottom: 0;
+  }
+
+  .showcase-3 .message-img,
+  .showcase-3 .message {
+    width: 40%;
+  }
+
+  .showcase-3 .read-more-btn {
+    width: 50%;
+    text-align: right;
+    position: relative;
+    top: -5rem;
+    margin-bottom: -5rem;
+  }
+
 }
 
 
@@ -349,4 +448,46 @@ footer li {
   .flex-item p {
     font: 14px/20px Helvetica;
   }
+
+  #what-we-do .showcase-head,
+  #what-we-do .showcase-head p,
+  .showcase-3 {
+    text-align: center;
+  }
+
+  #what-we-do .showcase-head p {
+    font: Bold 22px/28px Helvetica;
+  }
+
+  .showcase-3 {
+    display: block;
+  }
+
+  .showcase-3 .white-box {
+    width: auto;
+    margin-bottom: 7rem;
+  }
+
+  .showcase-3 .white-box:last-child {
+    margin-bottom: 0;
+  }
+
+  .message-img {
+    left: 0;
+  }
+
+  .message-img img {
+    height: 200px;
+    transform: scaleX(1);
+  }
+
+  .showcase-3 .white-box span {
+    font: Bold 18px/24px Helvetica;
+  }
+
+  .showcase-3 .white-box p {
+    font: 14px/20px Helvetica;
+  }
+
+
 }
